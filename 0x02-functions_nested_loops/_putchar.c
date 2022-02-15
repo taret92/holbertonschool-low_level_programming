@@ -2,8 +2,8 @@
 /**
  *main - Print _putchar
  *Return: 0
- *_putchar - print a character
-  */
+ */
+
 int main(void)
 {
 	_putchar('_');
