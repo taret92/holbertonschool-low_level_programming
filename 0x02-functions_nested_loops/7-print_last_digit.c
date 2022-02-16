@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int print_last_digit( int r)
+int print_last_digit(int r)
 {
 	int lastdigit, d;
 
@@ -20,7 +20,7 @@ int print_last_digit( int r)
 	}
 	else
 	{
-		_putchar(lastdigit + '0');
+		_putchar (lastdigit);
 	}
-	return(lastdigit);
+	return (lastdigit);
 }
