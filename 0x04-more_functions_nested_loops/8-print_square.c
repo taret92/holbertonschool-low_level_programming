@@ -1,30 +1,30 @@
 #include "main.h"
 
 /**
- * print_square - print a square :)
+ * print_square - prints a square :)
  * @size: size of the sqaure
- * Return: 0
+ * Return: void
  */
 
 void print_square(int size)
 {
-	char a;
+	char r;
 	char c;
 
-		if (size > 0)
+	if (size > 0)
 	{
-		for (a = 0; a < size; a++)
+		for (r = 0; r < size; r++)
 		{
 
 		for (c = 0; c < size; c++)
 			{
 				_putchar('#');
 			}
-
-			_putchar('\n');
+		
+				_putchar('\n');
 		}
 	}
 
-		else
+	else
 		_putchar('\n');
 }
