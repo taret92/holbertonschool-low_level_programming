@@ -1,25 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_array - check array
- *@a: pointer
- *@n: int 
- * Return: Always 0
- */
-
+*print_array - Entry point
+*@a: is a the iterador
+*@n: is a condition
+* Return: Always 0 (Success)
+*/
 void print_array(int *a, int n)
 {
-	int i;
+	int j;
 
-	for (i = 0; i < n; i++)
+	if (n < 0)
 	{
-		if (i != (n - 1))
+		printf("\n");
+		printf("\n");
+	}
+	for (j = 0; j <= (n - 1); j++)
+	{
+		if (j != (n - 1))
 		{
-			printf("%d, ", a[i]);
+			printf("%d, ", a[j]);
 		}
 		else
 		{
-			printf("%d", a[i]);
+			printf("%d\n", a[j]);
 		}
 	}
-	printf("\n");
 }
