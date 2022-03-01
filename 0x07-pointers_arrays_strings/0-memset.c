@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * _memset -  fills the first n bytes of the memory
- * 
  * @s: string
- * @b: char 
+ * @b: char
  * @n: bytes
  * Return: s
  */
