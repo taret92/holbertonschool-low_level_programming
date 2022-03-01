@@ -5,7 +5,7 @@
  * @s: str
  * @accept: str
  * Return: pointer
- * or NULL if no such byte is found
+ * or NULL if no such bytes is found
  */
 
 char *_strpbrk(char *s, char *accept)
