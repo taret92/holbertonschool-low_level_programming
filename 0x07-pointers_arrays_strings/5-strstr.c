@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _strstr - locate a substring
+ * @haystack: where search
+ * @needle: what search
+ * Return: 0
+ */
 
 
 
