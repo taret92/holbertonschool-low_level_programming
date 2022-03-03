@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt -evaluate 1 to n
+ * sqrt2 -evaluate 1 to n
  * @a: n
  * @b: iterates 1 to n
  * Return: On success 1
