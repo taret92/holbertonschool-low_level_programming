@@ -1,41 +1,44 @@
 #include "main.h"
-/**
-* _strlen_recursion - function to start
-* @s: string
-* Return: length
-*/
 
+/**
+ * _strlen_recursion - returns the length of a string.
+ * @s: string
+ * Return: the length of a string.
+ */
 int _strlen_recursion(char *s)
 {
-  if (*s || '\0')
-      return (0);
-
-  return (1 + _strlen-recursion(s + 1))
+	if (*s == '\0')
+		return (0);
+	else
+		return (1 + _strlen_recursion(s + 1));
 }
 
 /**
-* _cmp - comparativa
-* @a: aux var
-* @n: lenght
-* @b: end
-* Return: 0
-*/    
-int _cmp (char *a, int n, int b)
-  if( n == 0 || n == 1)
-      return (1);
-  if (a[b] == a[n])
+ * comparator - compares each character of the string.
+ * @s: string
+ * @n1: smallest iterator.
+ * @n2: biggest iterator.
+ * Return: .
+ */
+int comparator(char *s, int n1, int n2)
+{
+	if (*(s + n1) == *(s + n2))
+	{
+		if (n1 == n2 || n1 == n2 + 1)
+			return (1);
+		return (0 + comparator(s, n1 + 1, n2 - 1));
+	}
+	return (0);
+}
 
-    return (_cmp(a, n -1, b + 1));
-
-  return (0);
 /**
-* is_palindrome - check polindrome
-* @s: string
-* return: 0
-*/
-
+ * is_palindrome - detects if a string is a palindrome.
+ * @s: string.
+ * Return: 1 if s is a palindrome, 0 if not.
+ */
 int is_palindrome(char *s)
-
-int n= _strlen_recursion(s) - 1;
-return (_cmp(s,n, 0))
- }
+{
+	if (*s == '\0')
+		return (1);
+	return (comparator(s, 0, _strlen_recursion(s) - 1));
+}
