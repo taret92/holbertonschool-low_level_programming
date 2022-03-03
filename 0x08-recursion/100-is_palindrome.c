@@ -1,51 +1,41 @@
 #include "main.h"
 /**
-* strlen_recur - function to start
+* _strlen_recursion - function to start
 * @s: string
 * Return: length
 */
 
-int strlen_recur(char *s)
+int _strlen_recursion(char *s)
 {
-  if (!s || !*s)
-    return (0);
-  else
-    return (1 + _strlen_recur(s + 1));
-}
-/**
-* comp_recur - comparative
-* @s: string
-* @half: half 
-* @b: char
-* Return: comparative
-*/
+  if (*s || '\0')
+      return (0);
 
-int comp_recur (*s, char *b, int half)
-{
-  if (*s != *b)
-{
-  return (0)
-}
-  if (half == 0)
-{
-  return (1);
-}
-  return (comp_recur(s + 1, b - 1, half - 1));
+  return (1 + _strlen-recursion(s + 1))
 }
 
 /**
-* _is_palindrome - check palindrome
+* _cmp - comparativa
+* @a: aux var
+* @n: lenght
+* @b: end
+* Return: 0
+*/    
+int _cmp (char *a, int n, int b)
+  if( n == 0 || n == 1)
+      return (1);
+  if (a[b] == a[n])
+
+    return (_cmp(a, n -1, b + 1));
+
+  return (0);
+/**
+* is_palindrome - check polindrome
 * @s: string
-* @half: half
-* Return: palindrome
+* return: 0
 */
 
-int_is_palindrome (char *s)
-{
-  int half;
-  char *b = s;
+int is_palindrome(char *s)
 
-  half = strlen_recur(s) / 2;
-  b = s (strlen_recur(s) - 1);
-    return (comp_recur(s, b, half));
-}
+int n= _strlen_recursion(s) - 1;
+return (_cmp(s,n, 0))
+  }
