@@ -5,7 +5,6 @@
  * main - maing function
  * @argc: number of objects
  * @argv: array of content
- * @mul: contain the multiplication
  * Return: 0
  */
 
