@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+ * main - main function
+ * @argc: number of arguments
+ * @argv: array of argumentos
+ * Return: 0
+ */
 
 
 int main(int argc, char *argv[])
