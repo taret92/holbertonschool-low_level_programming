@@ -12,20 +12,20 @@
 
 int main(int argc, char *argv[])
 {
-	int count, digit;
+	int quantity, number;
 	int sum = 0;
 
-	for (count = 1; count < argc; count++)
+	for (quantity = 1; quantity < argc; quantity++)
 	{
-		for (digit = 0; argv[count][digit]; digit++)
+		for (number = 0; argv[quantity][number]; number++)
 		{
-			if (argv[count][digit] < '0' || argv[count][digit] > '9')
+			if (argv[quantity][number] < '0' || argv[quantity][number] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += atoi(argv[count]);
+		sum += atoi(argv[quantity]);
 	}
 	printf("%d\n", sum);
 	return (0);
