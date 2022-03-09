@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* alloc_grid - malloc bidimensional
+* @i: first variable 
+* @j: second variable
+* Return: grid
+*/
+
 int **alloc_grid(int width, int height)
 {
 	int **out;
@@ -13,7 +20,7 @@ int **alloc_grid(int width, int height)
 	out = malloc(sizeof(int *)* height);
 	if (out == NULL)
 	
-		return (NULL)
+		return (NULL);
 
 	for (i = 0; i < height; i++)
 	{
