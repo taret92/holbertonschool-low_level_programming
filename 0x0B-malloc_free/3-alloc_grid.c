@@ -6,8 +6,6 @@
 * alloc_grid - malloc bidimensional
 * @width: ancho
 * @height: alto
-* @i: first variable
-* @j: second variable
 * Return: grid
 */
 
