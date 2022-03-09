@@ -4,7 +4,9 @@
 
 /**
 * alloc_grid - malloc bidimensional
-* @i: first variable 
+* @width: ancho
+* @height: alto
+* @i: first variable
 * @j: second variable
 * Return: grid
 */
@@ -36,6 +38,7 @@ int **alloc_grid(int width, int height)
 		free(out);
 		return (NULL);
 	}
+	
 	}
 		for (i = 0; i < height; i++)
 		for (j = 0; j < width; j++)
