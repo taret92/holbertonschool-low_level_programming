@@ -1,4 +1,5 @@
-#ifndef TASK4
-#define TASK4
+#ifndef TASK
+#define TASK
+
 #define SUM (x, y) ((x) + (y))
 #endif
