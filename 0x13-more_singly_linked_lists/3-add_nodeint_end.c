@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ * add_nodeint_end - add a node at the end
+ * @head: first node
+ * @n: data
+ * Return: head
+ */
 
 
 
