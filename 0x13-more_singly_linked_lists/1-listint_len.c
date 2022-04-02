@@ -4,6 +4,7 @@
  * listint_len - Return the number of elements in a linked
  * list
  * @h: head of list
+ * Return: nodos
  */
 
 size_t listint_len(const listint_t *h)
