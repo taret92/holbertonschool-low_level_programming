@@ -3,7 +3,7 @@
 /**
  * print_binary - print a number in binary
  * @n: number
- * Return: binary
+ * Return: nothing
  */
 
 void print_binary(unsigned long int n)
@@ -12,6 +12,5 @@ void print_binary(unsigned long int n)
 			print_binary(n >> 1);
 		_putchar((n & 1) + '0');
 
-	return (-1);
 
 }
