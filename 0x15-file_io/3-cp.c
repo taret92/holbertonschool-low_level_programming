@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	ssize_t wr, from, to, rd;
+	int wr, from, to, rd;
 	int c = 0, c1 = 0;
 	char buff[1024];
 
