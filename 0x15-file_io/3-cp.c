@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	if (to == -1)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	rd = read(from, buff, 1024);
-	while (rd < 0)
+	while (rd > 0)
 	{
 	wr = write(to, buff, rd);
 		if (wr == -1)
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	}
 	if (rd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read to %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(98);
 	}
 	c = close(from);
 	if (c == -1)
