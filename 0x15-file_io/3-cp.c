@@ -14,30 +14,31 @@ main(int argc, char *argv[])
 	int wr, from, to, rd;
 	int c = 0, c1 = 0;
 	char buff[1024];
+
 	if (argc != 3)
-	dprint(STDERR_FILENO, "usage: cp file_from file_to\n"), exit (97);
-	
+	dprint(STDERR_FILENO, "usage: cp file_from file_to\n"), exit(97);
+
 	from = open(argv[1], O_RDONLY);
 		if (from == -1)
-	
+
 		return (-1);
 	{
 		dprint(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);	
+		exit(98);
 	}
 	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
-	if (to = -1)
+	if (to == -1)
 	dprint(STDERR_FILENO, "Error: Can't write to %s\n"), exit(99);
 
 	rd = read(from, buff, 1024);
 
 	while (rd < 0)
 	{
-	wr = write (to, buff, rd);
-	if (wr == -1)
+	wr = write(to, buff, rd);
+		if (wr == -1)
 		{
-			dprint(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),exit(99);
+			dprint(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 		}
 	rd = read(from, buff, 1024);
 	}
@@ -53,5 +54,5 @@ main(int argc, char *argv[])
 	c1 = close(to);
 	if (c1 == -1)
 		dprint(STDERR_FILENO, "Error: Can't close fd %d\n", c1), exit(100);
-		return(0);
+		return (0);
 }
